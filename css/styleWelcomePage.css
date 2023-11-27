@@ -1,0 +1,96 @@
+.html{
+    font-size: 62.5%; /*deixa o tamanho do pixel em 10px*/
+}
+
+.body{
+    font-size: 1.6rem; /*16px*/
+    background: #E9EBF2;
+    display: flex; /* tag que deixa flexivel, nesse caso centralizado */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght);
+}
+
+.title{
+    color: #C25929;
+    font-size: 60px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    display: flex; /* tag que deixa flexivel, nesse caso centralizado */
+    align-items: center;
+    justify-content: center;
+}
+.fade-inout{ /* classe para a animação */
+    animation: fadeInOut 4s ease-out forwards; /* forwards para a animação*/
+}
+
+@keyframes fadeInOut{ /*criar a animação de aparecer e sumir*/
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 6.5s ease-in forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logo{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top: 9rem;
+    left: 36rem;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.link{
+    color: #C25929;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 30px;
+    top: 29rem;
+    left: 44rem;
+}
+
+/* ------- css for small screens ------- */
+@media only screen and (max-width: 600px){
+    .logo{
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        top: 13rem;
+        left: 4.3rem;
+    }
+    .link{
+        position: absolute;
+        font-size: 30px;
+        top: 28rem;
+        left: 9.5rem;
+    }
+}

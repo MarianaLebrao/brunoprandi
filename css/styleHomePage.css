@@ -1,0 +1,182 @@
+.html{
+    font-size: 62.5%; /*deixa o tamanho do pixel em 10px*/
+}
+.body{
+    font-size: 1.6rem; /*16px*/
+    background-color: #E9EBF2;
+    padding: 0;
+    margin: 0;
+}
+/*------------- slide de imagens auto -----------*/
+.c-item{
+    height: 560px;
+}
+.c-image{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+/*-------------- final do slide de imagens -----------*/
+/*-------------- Projetos ---------------*/
+.sub-title{
+    margin: 50px;
+    padding: 20px;
+    border: none;
+    border-left: 10px solid #C25929;
+    font-family: Helvetica, Arial;
+    font-size: 50px;
+    font-weight: 600;
+    color: #0D0D0D;
+}
+#projetos{
+    padding: 50px 0;
+}
+.projetos-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.projetos{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.projetos img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.h3{
+    color: #E9EBF2;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #C25929);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer a{
+    margin-top: 20px;
+    color: #0D0D0D;
+    text-decoration: none;
+    line-height: 60px;
+    background: #E9EBF2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.projetos:hover img{
+    transform: scale(1.1);
+}
+.projetos:hover .layer{
+    height: 100%;
+}
+
+/* ------------- sobre o arquiteto ---------- */ 
+
+#arquiteto{
+    padding: 80px 0;
+    color: #0D0D0D;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    margin-top: 30px;
+    flex-basis: 60%;
+}
+.h1{
+    font-family: Helvetica, Arial;
+    font-size: 37px;
+    font-weight: 570;
+    color: #0D0D0D;
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+/* --------------- contato -----------*/
+#contato ul {
+    display: flex; 
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+#contato li {
+    list-style-type: none;
+    display: inline;
+    color: #0D0D0D;
+}
+.container-2{
+    background-color: #E9EBF2;
+}
+.container-2 p i{
+    color: #0D0D0D;
+}
+.con-text{
+    padding-left: 35px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: Helvetica, Arial;
+    font-size: 23px;
+    border-left: #C25929 solid;
+}
+.h1-2{
+    font-family: Helvetica, Arial;
+    font-size: 37px;
+    font-weight: 570;
+    color: #0D0D0D;
+    border-bottom: #C25929 solid;
+}
+
+/*----------- responsivo -----------*/
+@media only screen and (max-width: 600px){
+    .sub-title{
+        font-size: 40px;
+        border-left: 7px solid #C25929;
+        margin-left: 20px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .con-text{
+        margin-left: 30px;
+        font-size: 23px;
+    }
+    .h1-2{
+        font-size: 27px;
+    }
+    
+
+}
